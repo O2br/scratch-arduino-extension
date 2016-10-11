@@ -1100,6 +1100,7 @@
     url: 'http://khanning.github.io/scratch-arduino-extension'
   };
 
-  ScratchExtensions.register('Arduino', descriptor, ext, {type:'serial'});
+  var hid_info = {type: 'hid', vendor: 0x1A86, product: 0x7523};
+  ScratchExtensions.register('Arduino', descriptor, ext, hid_info);
 
 })({});
